@@ -12,7 +12,7 @@ namespace Aluno.Controllers
     public class AlunoController : Controller
     {
         private AlunoModel alunoModel = new AlunoModel();
-
+        
         public ActionResult Index()
         {
             AlunoViewModel vm = new AlunoViewModel();
@@ -57,6 +57,8 @@ namespace Aluno.Controllers
             alunoModel.excluirAluno(a);
             return RedirectToAction("Index");
         }
+
+        //teste
 
     }
 }
