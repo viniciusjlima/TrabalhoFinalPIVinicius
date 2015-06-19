@@ -8,7 +8,7 @@ namespace Aluno.Models
 {
     public class AlunoModel
     {
-        //private AlunoEntities db = new AlunoEntities();
+        private AlunoEntities db = new AlunoEntities();
 
         public List<aluno> todosAlunos()
         {
