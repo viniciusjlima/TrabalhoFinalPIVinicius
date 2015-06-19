@@ -40,14 +40,7 @@ namespace Aluno.Models
             return lista.ToList().FirstOrDefault();
         }
 
-        public aluno obterAlunoteste(int idAluno)
-        {
-            var lista = from a in db.Aluno
-                        where a.IdAluno == idAluno
-                        select a;
-            return lista.ToList().FirstOrDefault();
-        }
-
+       
         public List<aluno> listarAlunos(string pesquisa)
         {
             var lista = from a in db.Aluno
